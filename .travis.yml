@@ -13,13 +13,13 @@ matrix:
             - git
             - cmake
             - libboost-dev
-            - libboost-context1.55.0
             - libboost-all-dev
-            - doxygen
             - g++-5
       env: COMPILER=g++-5
 
 before_install:
+  - sudo apt-get install -y libboost-context1.55.0
+  - sudo apt-get install -y doxygen
   - git clone https://github.com/simgrid/simgrid.git
   - cd simgrid
   - cmake -Denable_documentation=OFF -Denable_coverage=OFF -Denable_java=OFF -Denable_model-checking=OFF -Denable_lua=OFF -Denable_compile_optimizations=OFF -Denable_smpi=OFF -Denable_smpi_MPICH3_testsuite=OFF -Denable_compile_warnings=OFF .

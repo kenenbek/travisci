@@ -13,7 +13,7 @@ matrix:
             - git
             - cmake
             - libboost-dev
-            - libboost-context-dev
+            - libboost-context1.55.0
             - libboost-all-dev
             - doxygen
             - g++-5

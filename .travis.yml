@@ -29,7 +29,7 @@ before_install:
 
 install:
   - sudo apt install -y lcov
-  - gem install coverall-lcov
+  - gem install coveralls-lcov
 
 script:
   - mkdir build

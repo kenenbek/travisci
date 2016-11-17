@@ -30,7 +30,7 @@ before_install:
 script:
   - mkdir build
   - cd build
-  - (sudo cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && sudo make)
+  - sudo cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && sudo make
   - ./Travisci --enable-gcov
 
   after_success:

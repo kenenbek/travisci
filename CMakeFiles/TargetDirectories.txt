@@ -1,3 +1,0 @@
-/home/ken/ClionProjects/Travisci/CMakeFiles/rebuild_cache.dir
-/home/ken/ClionProjects/Travisci/CMakeFiles/edit_cache.dir
-/home/ken/ClionProjects/Travisci/CMakeFiles/Travisci.dir

@@ -38,7 +38,7 @@ script:
   - ./Travisci --enable-gcov
 
 after_success:
-  - lcov --directory . --capture --output-file coverage.info
-  - lcov --remove coverage.info 'tests/*' '/usr/*' --output-file coverage.info
-  - lcov --list coverage.info
-  - coveralls-lcov --repo-token ${COVERALLS_TOKEN} coverage.info
+  - sudo lcov --directory . --capture --output-file coverage.info
+  - sudo lcov --remove coverage.info 'tests/*' '/usr/*' --output-file coverage.info
+  - sudo lcov --list coverage.info
+  - sudo coveralls-lcov --repo-token ${COVERALLS_TOKEN} coverage.info

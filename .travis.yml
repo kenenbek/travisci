@@ -27,6 +27,14 @@ before_install:
   - sudo make install
   - cd ..
 
+  - git clone https://github.com/jbeder/yaml-cpp yaml-cpp
+  - cd yaml-cpp
+  - mkdir build
+  - sudo cmake -DBUILD_SHARED_LIBS=ON ..
+  - sudo make
+  - sudo make install
+  - cd ../..
+
 install:
   - sudo apt install -y lcov
   - gem install coveralls-lcov

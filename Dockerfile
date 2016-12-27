@@ -16,6 +16,7 @@ RUN cmake -Denable_documentation=OFF -Denable_coverage=OFF -Denable_java=OFF -De
 RUN sudo make 
 RUN sudo make install 
 RUN mkdir -p ~/Travisci
-COPY * ~/Travisci
+COPY ./*  ~/Travisci/
+WORKDIR "~/Travisci"
 CMD ["./run.sh"]
 			
